@@ -1,6 +1,6 @@
 import { SideBarContext } from '@/context/SideBarContext';
 import React, { useContext } from 'react'
-import SideNavRow from '@/components/SideNavContainer/SideNavRowcopy'
+import SideNavRow from '@/components/SideNavContainer/SideNavRow'
 import { ChevronLeft } from '@mui/icons-material';
 const SubSideBar = () => {
 
@@ -20,12 +20,9 @@ const SubSideBar = () => {
             <>
       
               {/* <div className='p-4'>{!subEntry.submenu && subEntry.label}</div> */}
-              
-               
+                             
                   <SideNavRow key={subEntry.id} text={subEntry.label} entries={subEntry.submenu}/>
-                
-           
-                
+             
               </> 
           
                 
